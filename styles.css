@@ -9,10 +9,23 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/**? this is for the navbar styles 
+**/
 .navbar{
     background-color: #3330E4;
     color:#fff;
     padding: 25px 60px;
+    display: flex;
+    font-display:row;
+    justify-content: space-between;
+}
+
+.cart{
+    background-color: black;
+    color:white;
 
 }
+
+
+
 
