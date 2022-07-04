@@ -18,6 +18,7 @@ body {
     display: flex;
     font-display:row;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .cart{
@@ -44,5 +45,21 @@ body {
     border-radius: 3px;
 }
 
+
+/**
+* ? shop items space
+**/
+
+.shop{
+display: grid;
+grid-template-columns: repeat(4, 223px);
+
+}
+
+.item{
+    border: 2px solid black;
+    border-radius: 4px;
+
+}
 
 
