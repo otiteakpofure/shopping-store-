@@ -1,24 +1,25 @@
-/* remove of the default styles of our browser  */
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
-body {
+/* body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+} */
 
-/**? this is for the navbar styles 
-**/
+
 .navbar{
     background-color: #3330E4;
     color:#fff;
     padding: 25px 60px;
-    display: flex;
-    font-display:row;
-    justify-content: space-between;
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
     margin-bottom: 30px;
+    width: 100%;
+    
 }
 
 .cart{
@@ -45,6 +46,9 @@ body {
     border-radius: 3px;
 }
 
+.shirt{
+    width:100%;
+}
 
 /**
 * ? shop items space
@@ -52,7 +56,19 @@ body {
 
 .shop{
 display: grid;
-grid-template-columns: repeat(4, 223px);
+grid-template-columns: repeat(4, 15rem);
+gap:30px;
+justify-content: center;
+
+}
+
+@media (max-width:1000px){
+   .shop{
+    grid-template-columns: repeat(1, 223px); 
+   }
+   /* .image1{
+    width:219px;
+} */
 
 }
 
@@ -62,4 +78,32 @@ grid-template-columns: repeat(4, 223px);
 
 }
 
+/* for flexind the price  */
+.details{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:10px;
+}
 
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* for the increment and decrement  */
+.buttons{
+    display: flex;
+    gap:8px;
+    font-size: 16px;
+}
+
+.fa-minus{
+    color:green;
+}
+
+
+.fa-plus{
+    color: red;
+}
